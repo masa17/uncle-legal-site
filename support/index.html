@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support — Uncle</title>
+  <meta name="description" content="Support page for the Uncle mobile application." />
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#111827; --muted:#6b7280; --border:#e5e7eb; --link:#1d4ed8; --max:860px;
+    }
+    html,body{background:var(--bg);color:var(--fg);margin:0;padding:0;}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial;
+      line-height:1.6;
+    }
+    .wrap{max-width:var(--max);margin:0 auto;padding:40px 18px 72px;}
+    h1{font-size:2rem;margin:0 0 6px;letter-spacing:-0.02em;}
+    .meta{color:var(--muted);font-size:0.95rem;}
+    h2{font-size:1.25rem;margin:28px 0 10px;}
+    ul{margin-top:8px;}
+    a{color:var(--link);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .card{
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:16px 18px;
+      margin:18px 0;
+      background:#fafafa;
+    }
+    footer{
+      margin-top:44px;
+      padding-top:18px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Uncle Support</h1>
+      <div class="meta">
+        We’re here to help.
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Contact Us</h2>
+      <p>
+        For support, questions, or technical issues, email:
+      </p>
+      <p>
+        <strong>
+          <a href="mailto:uncleapp@protonmail.com">
+            uncleapp@protonmail.com
+          </a>
+        </strong>
+      </p>
+      <p>
+        Please include:
+      </p>
+      <ul>
+        <li>Your device model</li>
+        <li>Your iOS version</li>
+        <li>A short description of the issue</li>
+      </ul>
+      <p>
+        We typically respond within 1–2 business days.
+      </p>
+    </section>
+
+    <section>
+      <h2>Common Topics</h2>
+
+      <h3 style="font-size:1.05rem;margin-top:18px;">Subscription & Billing</h3>
+      <p>
+        Subscriptions are managed through your Apple ID.
+        To cancel or modify a subscription:
+      </p>
+      <ul>
+        <li>Open Settings on your iPhone</li>
+        <li>Tap your Apple ID</li>
+        <li>Select Subscriptions</li>
+        <li>Choose Uncle</li>
+      </ul>
+      <p>
+        We do not process payments directly and cannot issue refunds.
+        For billing issues, please contact Apple Support.
+      </p>
+
+      <h3 style="font-size:1.05rem;margin-top:24px;">App Limits Not Working</h3>
+      <p>
+        Ensure Screen Time permissions are enabled for Uncle.
+        If limits are not triggering:
+      </p>
+      <ul>
+        <li>Restart the app</li>
+        <li>Confirm Screen Time authorization is active</li>
+        <li>Reconfigure your selected apps</li>
+      </ul>
+    </section>
+
+    <section style="margin-top:28px;">
+      <h2>General Information</h2>
+      <p>
+        Uncle works entirely on-device and does not collect personal data.
+        For more information, please review:
+      </p>
+      <p>
+        <a href="/privacy">Privacy Policy</a> ·
+        <a href="/terms">Terms of Use</a>
+      </p>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Uncle. All rights reserved.</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
